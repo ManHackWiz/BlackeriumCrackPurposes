@@ -17,3 +17,11 @@ end)
 tab1:CreateButton("ChatHaxx", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
 end)
+
+tab1:CreateButton("Close", function()
+PabloLib:Close()
+end)
+
+tab1:CreateButton(" ", function()
+print("BlackeriumPrivate may come soon im not sure.  -matwooo")
+end)
