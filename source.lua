@@ -6,6 +6,11 @@ local window = PabloLib:Create(
 )
 
 local tab1 = window:CreateTab("Main")
+
+tab1:CreateButton("Close", function()
+PabloLib:Close()
+end)
+
 tab1:CreateButton("InfYield Admin", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
@@ -18,10 +23,8 @@ tab1:CreateButton("ChatHaxx", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
 end)
 
-tab1:CreateButton("Close", function()
-PabloLib:Close()
-end)
+local tab2 = window:CreateTab("Games")
 
-tab1:CreateButton(" ", function()
-print("BlackeriumPrivate may come soon im not sure.  -matwooo")
+tab1:CreateButton("Blade Ball", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))()
 end)
