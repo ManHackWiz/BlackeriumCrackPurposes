@@ -25,6 +25,6 @@ end)
 
 local tab2 = window:CreateTab("Games")
 
-tab1:CreateButton("Blade Ball", function()
+tab2:CreateButton("Blade Ball", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))()
 end)
