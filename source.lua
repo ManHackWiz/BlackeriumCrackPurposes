@@ -3,7 +3,7 @@ local window = PabloLib:Create(
 "Blackerium", -- Name here.
 "Enabled",
 "B" -- Open/Close Keybind. You can modify the script to have another keybind.
-)
+
 
 local tab1 = window:CreateTab("Main")
 
@@ -28,3 +28,29 @@ local tab2 = window:CreateTab("Games")
 tab2:CreateButton("Blade Ball", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))()
 end)
+
+tab2:CreateButton("Arsenal | ThunderClient", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/ThunderClient/main/main.lua", true))()
+end)
+
+tab2:CreateButton("Hoho Hub | !KEY!", function()
+_G.HohoVersion = "v3"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))() 
+end)
+
+tab2:CreateButton("PS99 - Zaphub | !KEY!", function()
+loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+end)
+
+tab2:CreateButton("BABFT - RubyHub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/main/main/RubyHub.lua", true))()
+end)
+
+tab2:CreateButton("Vynixius Doors || RUN ALONGSIDE IE.", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+
+wait(5)
+print("Blackerium has loaded into your server!")
+wait(5)
+print("Official site: matw0lol.github.io")
