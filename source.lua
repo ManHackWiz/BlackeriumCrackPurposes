@@ -51,6 +51,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixiu
 end)
 
 wait(0.5)
-print("Blackerium has loaded into your server!")
-wait(0.5)
-print("Official site: MAKING IT..")
+game:GetService('StarterGui'):SetCore('SendNotification', ({
+     Title = 'Blackerium', 
+     Text = 'Blackerium Has Loaded Into Your Server Successfully!', 
+     Duration = 10
