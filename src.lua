@@ -33,10 +33,6 @@ tab2:CreateButton("Blade Ball", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))()
 end)
 
-tab2:CreateButton("Arsenal | ThunderClient", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/ThunderClient/main/main.lua", true))()
-end)
-
 tab2:CreateButton("Hoho Hub | !KEY!", function()
 _G.HohoVersion = "v3"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))() 
