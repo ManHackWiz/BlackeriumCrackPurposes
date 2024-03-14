@@ -1,9 +1,9 @@
 local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
 local window = PabloLib:Create(
-"Blackerium", -- Name here.
-"Enabled",
-"B" -- Open/Close Keybind. You can modify the script to have another keybind.
-
+"Name", -- Name here.
+"Enabled", -- If you want draggable set here to "Enabled" if you dont want set to "Disabled".
+"b" -- You can put any keybind here to open close.
+)
 local tab1 = window:CreateTab("Main")
 
 tab1:CreateButton("Close", function()
