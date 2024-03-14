@@ -1,2 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/BlackeriumScriptHub/main/BE.lua"))()
--- MADE BY @matwooo on discord
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/BlackeriumScriptHub/main/src.lua"))()
