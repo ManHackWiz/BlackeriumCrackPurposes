@@ -46,9 +46,3 @@ end)
 tab2:CreateButton("Vynixius Doors || RUN ALONGSIDE IE.", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
 end)
-
-wait(0.5)
-game:GetService('StarterGui'):SetCore('SendNotification', ({
-     Title = 'Blackerium || dsc.gg/blackerium', 
-     Text = 'Blackerium Has Loaded Into Your Server Successfully!', 
-     Duration = 10
