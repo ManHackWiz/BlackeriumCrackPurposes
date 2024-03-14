@@ -103,12 +103,16 @@ Humanoid.StateChanged:Connect(function(oldState, newState)
 end)
 
 tab3:CreateButton("Blackerium Private Loader ", function()
-local Player = game.Players.LocalPlayer
 
-local function sendNotification(message)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Blackerium Private:";
-        Text = This user isn't whitelisted yet!;
-        Duration = 5;
-    })
-end)
+local textLabel = Instance.new("TextLabel")
+textLabel.Text = "This session has been bricked! You aren't on the WLDB yet, please ensure your using your whitelisted roblox account."
+textLabel.Size = UDim2.new(0, 200, 0, 50)
+textLabel.Position = UDim2.new(0.5, -100, 0.5, -25)
+textLabel.BackgroundTransparency = 1
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.TextStrokeTransparency = 0.5
+textLabel.TextStrokeColor3 = Color3.new(0, 0, 0)
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+   end)
