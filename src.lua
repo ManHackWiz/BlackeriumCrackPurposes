@@ -101,3 +101,21 @@ Humanoid.StateChanged:Connect(function(oldState, newState)
         canDoubleJump = true
     end
 end)
+
+tab3:CreateButton("Blackerium Private Loader ", function()
+local Player = game.Players.LocalPlayer
+local function sendNotification(message)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Blackerium Private:";
+        Text = Getting modules..;
+        Duration = 5;
+    })
+end
+
+local Player = game.Players.LocalPlayer
+
+local function disconnectPlayer()
+    Player:Kick("Your user is not on the BPWLDB.")
+end
+
+   end)
