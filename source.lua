@@ -4,7 +4,6 @@ local window = PabloLib:Create(
 "Enabled",
 "B" -- Open/Close Keybind. You can modify the script to have another keybind.
 
-
 local tab1 = window:CreateTab("Main")
 
 tab1:CreateButton("Close", function()
