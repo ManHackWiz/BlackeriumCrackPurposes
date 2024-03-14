@@ -62,10 +62,15 @@ tab3:CreateButton("Matwooo's ESP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/ESP.lua"))()
 end)
 
-local tab4 = window:CreateTab("BlackeriumExperimentalFeatures")
+local tab4 = window:CreateTab("Indev")
 
-tab4:CreateButton("Speed go funni", function()
-local character = game.Players.LocalPlayer.Character
-local humanoid = character:WaitForChild("Humanoid")
-humanoid.WalkSpeed = 25
+tab4:CreateButton("AntiAFK", function()
+local VirtualUser = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:Connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+end)
+
+tab4:CreateButton("SaveInstance || PC ONLY. ", function()
+SaveInstance()
 end)
