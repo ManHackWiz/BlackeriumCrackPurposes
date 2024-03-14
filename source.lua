@@ -52,6 +52,6 @@ end)
 
 wait(0.5)
 game:GetService('StarterGui'):SetCore('SendNotification', ({
-     Title = 'Blackerium', 
+     Title = 'Blackerium || dsc.gg/blackerium', 
      Text = 'Blackerium Has Loaded Into Your Server Successfully!', 
      Duration = 10
