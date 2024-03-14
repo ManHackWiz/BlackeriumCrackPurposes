@@ -52,16 +52,16 @@ end)
 
 local tab3 = window:CreateTab("Modifiers")
 
-tab2:CreateButton("QuickWalk", function()
+tab3:CreateButton("QuickWalk", function()
 local character = game.Players.LocalPlayer.Character
 local humanoid = character:WaitForChild("Humanoid")
 humanoid.WalkSpeed = 50
 end)
 
-tab2:CreateButton("Jump Boost", function()
+tab3:CreateButton("Jump Boost", function()
 humanoid.JumpPower = 100
 end)
 
-tab2:CreateButton("Moon Gravity", function()
+tab3:CreateButton("Moon Gravity", function()
 game.Workspace.Gravity = 50
 end)
