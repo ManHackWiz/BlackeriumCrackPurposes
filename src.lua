@@ -81,8 +81,11 @@ end)
 
 end)
 
-local tab4 = window:CreateTab("Notices")
+tab3:CreateButton("InfJump", function()
+game:GetService("UserInputService").JumpRequest:Connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 50
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 10
+end)
 
-tab4:CreateWarning("SOME SCRIPTS MAY USE KEYSYSTEMS.")
-tab4:CreateWarning("Script made by matwooo")
-tab4:CreateWarning("Script Discord: dsc.gg/blackerium")
+end)
