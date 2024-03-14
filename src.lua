@@ -61,3 +61,11 @@ end)
 tab3:CreateButton("Matwooo's ESP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/ESP.lua"))()
 end)
+
+local tab4 = window:CreateTab("BlackeriumExperimentalFeatures")
+
+tab4:CreateButton("Speed go funni", function()
+local character = game.Players.LocalPlayer.Character
+local humanoid = character:WaitForChild("Humanoid")
+humanoid.WalkSpeed = 25
+end)
