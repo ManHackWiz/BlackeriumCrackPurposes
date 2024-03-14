@@ -42,10 +42,6 @@ tab2:CreateButton("PS99 - Zaphub | !KEY!", function()
 loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
 end)
 
-tab2:CreateButton("BABFT - RubyHub", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/main/main/RubyHub.lua", true))()
-end)
-
 tab2:CreateButton("Vynixius Doors || RUN ALONGSIDE IE.", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
 end)
