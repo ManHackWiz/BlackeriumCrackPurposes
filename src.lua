@@ -81,11 +81,23 @@ end)
 
 end)
 
-tab3:CreateButton("InfJump", function()
-game:GetService("UserInputService").JumpRequest:Connect(function()
-    game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 50
-    wait(0.1)
-    game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 10
+tab3:CreateButton("DuoJump", function()
+local Player = game.Players.LocalPlayer
+local Character = Player.Character or Player.CharacterAdded:Wait()
+local Humanoid = Character:WaitForChild("Humanoid")
+
+local canDoubleJump = true
+
+Humanoid:GetPropertyChangedSignal("Jump"):Connect(function()
+    if canDoubleJump then
+        canDoubleJump = false
+        wait()
+        Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    end
 end)
 
+Humanoid.StateChanged:Connect(function(oldState, newState)
+    if newState == Enum.HumanoidStateType.Freefall then
+        canDoubleJump = true
+    end
 end)
