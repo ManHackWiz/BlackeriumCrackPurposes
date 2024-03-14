@@ -66,6 +66,21 @@ tab3:CreateButton("Matwooo's ESP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/ESP.lua"))()
 end)
 
+tab3:CreateButton("NoUIs", function()
+local function destroyUI()
+    for _, guiObject in ipairs(game:GetService("GuiService"):GetGuiItemsAtPosition(0, 0)) do
+        if guiObject:IsA("GuiObject") then
+            guiObject:Destroy()
+        end
+    end
+end
+
+script.Parent.HideButton.MouseButton1Click:Connect(function()
+    destroyUI()
+end)
+
+end)
+
 local tab4 = window:CreateTab("Notices")
 
 tab4:CreateWarning("SOME SCRIPTS MAY USE KEYSYSTEMS.")
