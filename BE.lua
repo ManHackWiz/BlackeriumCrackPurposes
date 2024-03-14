@@ -23,6 +23,10 @@ tab1:CreateButton("ChatHaxx", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
 end)
 
+tab1:CreateButton("Dark Dex V3", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+
 local tab2 = window:CreateTab("Games")
 
 tab2:CreateButton("Blade Ball", function()
