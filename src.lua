@@ -82,3 +82,5 @@ end)
 end)
 
 tab3:CreateButton("BlackeriumPrivate", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/loader.lua"))()
+end)
