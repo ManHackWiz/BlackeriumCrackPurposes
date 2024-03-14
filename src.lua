@@ -5,19 +5,6 @@ local window = PabloLib:Create(
 "p" -- You can put any keybind here to open close.
 )
 
-local function onPlayerAdded(player)
-
-    if player.Name == "Your_MilkMaker" then
-        local chatTag = Instance.new("StringValue")
-        chatTag.Name = "ChatTag"
-        chatTag.Value = "[Blackerium Head Dev]"
-        chatTag.Parent = player
-    end
-end
-
-game.Players.PlayerAdded:Connect(onPlayerAdded)
-
-
 local tab1 = window:CreateTab("Main")
  
 tab1:CreateButton("Close", function()
@@ -34,10 +21,6 @@ end)
 
 tab1:CreateButton("ChatHaxx", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
-end)
-
-tab1:CreateButton("Dark Dex V3", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end)
 
 local tab2 = window:CreateTab("Games")
