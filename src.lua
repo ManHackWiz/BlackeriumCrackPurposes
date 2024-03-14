@@ -5,6 +5,19 @@ local window = PabloLib:Create(
 "p" -- You can put any keybind here to open close.
 )
 
+local function onPlayerAdded(player)
+
+    if player.Name == "Your_MilkMaker" then
+        local chatTag = Instance.new("StringValue")
+        chatTag.Name = "ChatTag"
+        chatTag.Value = "[Blackerium Head Dev]"
+        chatTag.Parent = player
+    end
+end
+
+game.Players.PlayerAdded:Connect(onPlayerAdded)
+
+
 local tab1 = window:CreateTab("Main")
  
 tab1:CreateButton("Close", function()
@@ -64,29 +77,4 @@ end)
 
 tab3:CreateButton("Matwooo's ESP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/ESP.lua"))()
-end)
-
-tab3:CreateButton("NoUIs", function()
-local function destroyUI()
-    for _, guiObject in ipairs(game:GetService("GuiService"):GetGuiItemsAtPosition(0, 0)) do
-        if guiObject:IsA("GuiObject") then
-            guiObject:Destroy()
-        end
-    end
-end
-
-script.Parent.HideButton.MouseButton1Click:Connect(function()
-    destroyUI()
-end)
-
-end)
-
-tab3:CreateButton("BlackeriumPrivate", function()
-print("Finding Your Key..")
-wait(1)
-print("Key found! Is your key: BPK_TEST_10083866489366655377354773876545388465537836537645534a93735524424777365?")
-wait(1)
-print("User confirmed key!")
-wait(1)
-print("Blackerium Private should now inject.")
 end)
