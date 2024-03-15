@@ -1,6 +1,6 @@
 local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
 local window = PabloLib:Create(
-"Blackerium V1.6", -- Name here.
+"Blackerium V1.7", -- Name here.
 "Enabled", -- If you want draggable set here to "Enabled" if you dont want set to "Disabled".
 "p" -- You can put any keybind here to open close.
 )
@@ -74,4 +74,3 @@ else
 tab5:DeleteTab()
 button:Delete()
 end)
-
