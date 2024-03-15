@@ -62,15 +62,16 @@ tab3:CreateButton("Matwooo's ESP", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/ESP.lua"))()
 end)
 
-local tab4 = window:CreateTab("Indev")
+local tab4 = window:CreateTab("TestFeatures")
 
-tab4:CreateButton("AntiAFK", function()
-local VirtualUser = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:Connect(function()
-    VirtualUser:CaptureController()
-    VirtualUser:ClickButton2(Vector2.new())
+tab4:CreateToggle("TheHuntEventUI", function(state)
+if state then
+local tab5 = window:CreateTab("The Hunt")
+
+local button = tab5:CreateButton("The Hunt UI", function()
+print("Loadstring Is In Development.")
+else
+tab5:DeleteTab()
+button:Delete()
 end)
 
-tab4:CreateButton("SaveInstance || PC ONLY. ", function()
-SaveInstance()
-end)
