@@ -45,3 +45,9 @@ end)
 tab2:CreateButton("Vynixius Doors || RUN ALONGSIDE IE.", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
 end)
+
+local tab3 = window:CreateTab("The Hunt | LTT")
+
+tab1:CreateButton("NDS", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/HUNTNDS'))()
+end)
