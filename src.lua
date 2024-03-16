@@ -1,61 +1,8 @@
-local library = loadstring(game:HttpGet("https://hyphost.000webhostapp.com/Files/Public/HypUILibrary.lua"))()
-local AimbotTab = library:CreateTab("Aimbot", "Locks onto a player's head.")
-local VisualsTab = library:CreateTab("Visuals", "ESP, tracers, FOV, & more.")
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Moon'))() 
+local main = library:CreateWindow("Blackerium", "#19cf83", 9160626035)
 
-AimbotTab:CreateSection("Aimbot")
+main:CreateTab("Home") 
 
-AimbotTab:CreateCheckbox("Aimbot", function(Value)
-   return Value
-end)
-
-AimbotTab:CreateDropdown("Aim Type", {"Rage", "Legit"}, 2, function(Value)
-   return Value
-end)
-
-AimbotTab:CreateSection("FOV")
-
-AimbotTab:CreateCheckbox("Show FOV", function(Value)
-   return Value
-end)
-
-AimbotTab:CreateCheckbox("Rainbow", function(Value)
-   return Value
-end)
-
-AimbotTab:CreateSection("Settings")
-
-AimbotTab:CreateColorPicker("FOV Color", Color3.fromRGB(255, 255, 255), function(Value)
-   return Value
-end)
-
-AimbotTab:CreateSlider("FOV Size", 1, 250, 0, 0, function(Value)
-   return Value
-end)
-
-AimbotTab:CreateDropdown("Aim Part", {"Head", "Upper Torso"}, 2, function(Value)
-   return Value
-end)
-
-VisualsTab:CreateSection("ESP")
-
-VisualsTab:CreateCheckbox("ESP", function(Value)
-   return Value
-end)
-
-VisualsTab:CreateCheckbox("Show Teams", function(Value)
-   return Value
-end)
-
-VisualsTab:CreateSection("Tracers")
-
-VisualsTab:CreateCheckbox("Tracers", function(Value)
-   return Value
-end)
-
-VisualsTab:CreateSlider("Refresh Rate", 1, 100, 0, 0, function(Value)
-   return Value
-end)
-
-VisualsTab:CreateButton("Fix Visuals", function(Value)
-   return Value
+main:CreateButton("clicky", "Home", function()
+print('blackerium lols')
 end)
