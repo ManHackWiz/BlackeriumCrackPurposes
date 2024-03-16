@@ -1,4 +1,3 @@
--- BlackeriumSRC
 local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
 local window = PabloLib:Create(
 "Blackerium V1.8",
