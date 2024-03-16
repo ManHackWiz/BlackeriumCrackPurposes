@@ -1,7 +1,7 @@
 -- BlackeriumSRC
 local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
 local window = PabloLib:Create(
-"Blackerium V1.7",
+"Blackerium V1.8",
 "Enabled",
 "p"
 )
@@ -24,6 +24,10 @@ tab1:CreateButton("ChatHaxx", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/game-hax/uca/main/release/uca.min.lua"))()
 end)
 
+tab3:CreateButton("Matwooo's ESP", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/ESP.lua"))()
+end)
+
 local tab2 = window:CreateTab("Games")
 
 tab2:CreateButton("Blade Ball", function()
@@ -41,37 +45,4 @@ end)
 
 tab2:CreateButton("Vynixius Doors || RUN ALONGSIDE IE.", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
-end)
-
-local tab3 = window:CreateTab("Modifiers")
-
-tab3:CreateButton("QuickWalk", function()
-local character = game.Players.LocalPlayer.Character
-local humanoid = character:WaitForChild("Humanoid")
-humanoid.WalkSpeed = 50
-end)
-
-tab3:CreateButton("Jump Boost", function()
-humanoid.JumpPower = 100
-end)
-
-tab3:CreateButton("Moon Gravity", function()
-game.Workspace.Gravity = 50
-end)
-
-tab3:CreateButton("Matwooo's ESP", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MATW0lol/MATW0lol/main/ESP.lua"))()
-end)
-
-local tab4 = window:CreateTab("TestFeatures")
-
-tab4:CreateToggle("TheHuntEventUI", function(state)
-if state then
-local tab5 = window:CreateTab("The Hunt")
-
-local button = tab5:CreateButton("The Hunt UI", function()
-print("Loadstring Is In Development.")
-else
-tab5:DeleteTab()
-button:Delete()
 end)
