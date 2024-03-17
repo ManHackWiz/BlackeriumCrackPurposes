@@ -9,7 +9,7 @@ local Window = Rayfield:CreateWindow({
       FolderName = Blackerium,
       FileName = "Blackerium"
    },
-   KeySystem = true,
+   KeySystem = false,
    KeySettings = {
       Title = "Blackerium V2",
       Subtitle = "Key System",
@@ -26,8 +26,9 @@ local Tab = Window:CreateTab("Main", 4483362458)
 local Section = Tab:CreateSection("Scripts")
 
 local Button = Tab:CreateButton({
-   Name = "Button Example",
+   Name = "Testing",
    Callback = function()
-print("ButtonOne TabOne has been pressed!")
+local lplr = game.Players.LocalPlayer
+      lplr:Kick("You are not using a Matwo-Issued BDAID, there is no BDAID in your Blackerium folder, please DM Matwo for your BDAID file.")
    end,
 })
