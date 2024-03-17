@@ -13,11 +13,11 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "Blackerium V2",
       Subtitle = "Key System",
-      Note = "https://loot-link.com/s?sGe1 (HIGHLIGHT AND COPY THEN PASTE INTO BROWSER URL)",
-      FileName = "BlackeriumAuthentication",
-      SaveKey = false,
+      Note = "https://loot-link.com/s?sGe1 (One time process)",
+      FileName = "BlackeriumKey.txt",
+      SaveKey = true,
       GrabKeyFromSite = false,
-      Key = {"BLK#088327782883 , DEVMATWO.KEY.INF"}
+      Key = {"BLK#088327782883 , DEVMATWO.KEY.INF , RANK.FRIEND"}
    }
 })
 
