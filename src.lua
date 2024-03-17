@@ -9,15 +9,15 @@ local Window = Rayfield:CreateWindow({
       FolderName = Blackerium,
       FileName = "Blackerium"
    },
-   KeySystem = false,
+   KeySystem = true,
    KeySettings = {
       Title = "Blackerium V2",
       Subtitle = "Key System",
-      Note = "Currently, you need to use a BTAK to use this Build.",
+      Note = "https://loot-link.com/s?sGe1 (HIGHLIGHT AND COPY THEN PASTE INTO BROWSER URL)",
       FileName = "BlackeriumAuthentication",
       SaveKey = false,
       GrabKeyFromSite = false,
-      Key = {"BTAK.KEYSYS.DEV.BLACKERIUMV2.DNL"}
+      Key = {"BLK#088327782883 , DEVMATWO.KEY.INF"}
    }
 })
 
