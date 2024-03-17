@@ -1,7 +1,3 @@
-# About: 
+The Blackerium Project is a script designed to support 10+ games with some universal scripts such as InfYield.
 
-Blackerium Hub V1 is a script hub featuring VARIOUS games and scripts to use!
-
-We beat competitors i.e trollhax by miles with our leading UI design and executor support!
-
-Our official server: https://discord.gg/KWXKB9tB33
+We use the rayfield UI libary which has far better ui than some of ur competitors i.e TrollHax, a inferior utility
